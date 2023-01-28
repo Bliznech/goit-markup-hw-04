@@ -58,8 +58,7 @@
 .portfolio-all-img:hover {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-     0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-all-img:nth-child(3n) {
@@ -340,6 +339,36 @@ h2 {
   margin-left: 0;
 }
 
+.ul-svg-comand {
+  display: flex;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+.li-svg-comand {
+  margin-right: 24px;
+}
+.li-svg-comand:last-child {
+  margin-right: 0;
+}
+
+.svg-comand {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+}
+
+.a-svg-comand {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--logo-text-color);
+}
+.a-svg-comand:hover {
+  background-color: var(--links-hover-color);
+}
+
 .section3-text {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -411,6 +440,40 @@ h2 {
   color: var(--background-saits);
 }
 
+/* Section-4 */
+
+.our-clant-li {
+  margin-left: 24px;
+}
+.our-clant-li:first-child {
+  margin-left: 0;
+}
+.our-claiant {
+  display: flex;
+  padding: auto;
+  margin: auto;
+  margin-top: 72px;
+}
+.icon-clant {
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  color: #8e8f99;
+}
+.icon-clant:hover {
+  color: #404bbf;
+  border: 1px solid #404bbf;
+}
+
+.our-clant-svg {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+}
+
 /* FOOTER */
 .footer-web {
   font-family: var(--logo-text);
@@ -449,4 +512,35 @@ h2 {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.ul-svg-footer {
+  display: flex;
+}
+.h4-footer {
+  color: #f4f4fd;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  padding-bottom: 16px;
+}
+
+.a-svg-footer {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.a-svg-footer:hover {
+  background-color: #31d0aa;
+}
+.footer-flex {
+  display: flex;
+}
+.footer-social {
+  padding-left: 120px;
 }
