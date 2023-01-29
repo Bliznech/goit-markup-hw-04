@@ -55,17 +55,19 @@
   margin-bottom: 48px;
   cursor: pointer;
 }
-.portfolio-all-img:hover {
-  border: 0.5px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 .portfolio-all-img:nth-child(3n) {
   margin-right: 0;
 }
 .portfolio-all-img:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+.portfolio-shadow {
+  display: block;
+}
+.portfolio-shadow:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 ul {
@@ -91,6 +93,7 @@ h6,
 p,
 a {
   margin: 0;
+  text-decoration: none;
 }
 
 img {
@@ -341,8 +344,8 @@ h2 {
 
 .ul-svg-comand {
   display: flex;
-  padding-left: 16px;
-  padding-top: 8px;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 .li-svg-comand {
@@ -460,7 +463,8 @@ h2 {
   border-radius: 4px;
   width: 168px;
   height: 88px;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
   color: #8e8f99;
 }
 .icon-clant:hover {
@@ -506,7 +510,7 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-textcolor);
-  padding-top: 16px;
+  margin-top: 16px;
 }
 .footer-bagraund {
   background-color: #2e2f42;
@@ -525,7 +529,7 @@ h2 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .a-svg-footer {
@@ -533,7 +537,7 @@ h2 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .a-svg-footer:hover {
   background-color: #31d0aa;
@@ -542,5 +546,5 @@ h2 {
   display: flex;
 }
 .footer-social {
-  padding-left: 120px;
+  margin-left: 120px;
 }
