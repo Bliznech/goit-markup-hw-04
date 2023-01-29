@@ -65,7 +65,8 @@
 .portfolio-shadow {
   display: block;
 }
-.portfolio-shadow:hover {
+.portfolio-shadow:hover,
+:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -264,30 +265,24 @@ h2 {
   width: 264px;
 }
 
-.benefits::before {
-  display: block;
-  content: "";
-  height: 112px;
-  margin-bottom: 8px;
-  background: var(--footer-logo-color);
-  border-radius: 4px;
-  background-image: url(../images/litel-img/antenna.svg);
-  background-size: 59.72px 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.benefits:nth-child(2)::before {
-  background-image: url(../images/litel-img/clok.svg);
-}
-.benefits:nth-child(3)::before {
-  background-image: url(../images/litel-img/diagram.svg);
-}
-.benefits:nth-child(4)::before {
-  background-image: url(../images/litel-img/astronaut.svg);
-}
-
 .benefits:first-child {
   margin-left: 0;
+}
+
+.div-svg-strategi {
+  background: #f4f4fd;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-strategi {
+  width: 59.72px;
+  height: 64px;
 }
 
 .img-what-we-dung {
